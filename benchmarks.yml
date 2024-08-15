@@ -14,5 +14,4 @@ jobs:
           -F ref=master
           --form variables[MERGE_TIME]="$(date '+%Y-%m-%d_%H:%M:%S')"
           --form variables[SOURCE_SHA]="${{ github.sha }}"
-          --form variables[WRITE_TOKEN]="${{ secrets.TRACCC_BENCHMARK_WRITE_TOKEN }}"
           https://gitlab.cern.ch/api/v4/projects/190887/trigger/pipeline
