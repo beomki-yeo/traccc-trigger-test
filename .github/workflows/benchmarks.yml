@@ -5,8 +5,8 @@ on:
     branches:
       - main
 jobs:
-  detray_benchmark_job:
-    if: github.repository == 'beomki-yeo/traccc-trigger-test22'
+  traccc_benchmark_job:
+    if: github.repository == 'beomki-yeo/traccc-trigger-test'
     runs-on: ubuntu-latest
     steps:
       - run: >
